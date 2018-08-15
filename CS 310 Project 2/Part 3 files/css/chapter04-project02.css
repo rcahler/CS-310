@@ -1,0 +1,62 @@
+nav:hover {
+	color :#03A9f4;
+	background-color: #FF3D00;
+}
+
+#mainMenu {
+	background-color:#263238;
+	text-align: right;
+}
+
+h1 {
+	background-image: url("../images/header-background.png");
+	background-repeat: repeat;
+	background-color: #cccccc;
+	color: white;
+	font-size: 35px;
+	text-indent: 50px;
+}
+span {
+	color: red;
+}
+
+#secondaryMenu {
+	background-color: #607D8B;
+	text-indent: 50px;
+}
+
+#mainContact {
+	background-color: #ECEFF1;
+	
+}
+
+div {
+	display:flex;justify-content:center;align-items:center;
+}
+
+img {
+	border-style: solid;
+	border-width: medium;
+	max-width:100%;
+}
+
+h3 {
+	background-image: url("../images/header-background.png");
+	background-repeat: repeat;
+	background-color: #cccccc;
+}
+
+.actions {
+	background-color: #607D8B;
+}
+
+section {
+	margin-right: 150px;
+	margin-left: 150px;
+	border-style: solid;
+	border-width: medium;
+}
+
+
+
+

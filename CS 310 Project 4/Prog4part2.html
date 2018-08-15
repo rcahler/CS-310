@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+Hours: <input type="text" id="hours">
+Position: <input type="text" id="position">
+Salary: <input type="text" id="salary">
+
+<p>Click the button to calculate pay, over 40 hours is double pay</p>
+
+<button onclick="myFunction()">Calculate</button>
+
+<script>
+function myFunction() {
+	document.getElementById("salary").value = "";
+	var hours = document.getElementById("hours").value;
+	var pos = document.getElementById("position").value;
+	var salary;
+	pos.toLowerCase();
+	
+	if ((pos === "tester") ||(pos === "developer") || (pos === "manager")) {
+		switch(pos) {
+			case "tester":
+				if (hours > 40) {
+					salary = ((hours - 40) * ((1.5) * 35)) + (35 * 40);
+				} else {
+					salary = 35 * hours;
+				}
+				break;
+			case "developer":
+				if (hours > 40) {
+					salary = ((hours - 40) * ((1.5) * 50)) + (50 * 40);
+				} else {
+					salary = 50 * hours;
+				}
+				break;
+			case "manager":
+				if (hours > 40) {
+					salary = ((hours - 40) * ((1.5) * 65)) + (40 * 65);
+				} else {
+					salary = 65 * hours;
+				}
+				break;
+		}
+		document.getElementById("salary").value = "$" + salary;
+	} else {
+		document.getElementById("salary").value = "Enter a valid position";
+	}
+}
+</script>
+
+</body>
+</html>

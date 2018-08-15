@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+Days: <input type="text" id="days">
+Insurance: <input type="radio" id= "yes" name ="insurance" value = "yes"> Yes
+			<input type="radio" id="no" name ="insurance" value = "no"> No
+Type: <select id="type">
+			<option value="compact">Compact</option>
+			<option value="intermediate">Intermediate</option>
+			<option value="standard">Standard</option>
+		</select>
+		
+
+<p>Click the button to calculate rental payment</p>
+
+<button onclick="myFunction()">Calculate</button>
+
+<script>
+function myFunction() {
+	var type = document.getElementById("type").value
+	var days = document.getElementById("days").value
+	var answer;
+	if (document.getElementById('yes').checked) {
+		switch (type) {
+			case "compact":
+				answer = days * 45;
+				break;
+			case "intermediate":
+				answer = days * 55;
+				break;
+			case "standard":
+				answer = days * 65;
+				break;
+		}
+		document.getElementById("answer").innerHTML = answer
+	} else if (document.getElementById('no').checked) {
+		switch (type) {
+			case "compact":
+				answer = days * 30;
+				break;
+			case "intermediate":
+				answer = days * 40;
+				break;
+			case "standard":
+				answer = days * 50;
+				break;
+		}
+		document.getElementById("answer").innerHTML = answer
+	} else {
+		document.getElementById("answer").innerHTML = "Please select whether you would like insurance"
+	}
+}
+</script>
+
+<h1><span id="answer"></span></h1>
+
+</body>
+</html>

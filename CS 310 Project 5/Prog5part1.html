@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+Price of the car: <input type="text" id="P">
+Down payment: <input type="text" id="D">
+Annual Percentage Rate (APR): <input type="text" id="R">
+Number of years: <input type="text" id="N">
+
+<p>Click the button to calculate payment</p>
+
+<button onclick="myFunction()">Calculate</button>
+
+<script>
+function myFunction() {
+	var P = document.getElementById("P").value;
+	var D = document.getElementById("D").value;
+	var R = document.getElementById("R").value;
+	var N = document.getElementById("N").value;
+	
+	var i = R/1200;
+	var n = N *12;
+	
+	var M = ((P -D) * i * Math.pow((1 + i),n)/(Math.pow((1 + i),n) - 1));
+	document.getElementById("answer").innerHTML = M;
+}
+</script>
+
+<h1><span id="answer"></span></h1>
+
+</body>
+</html>

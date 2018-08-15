@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+Hours: <input type="text" id="hours">
+Position: <input type="text" id="position">
+Salary: <input type="text" id="salary">
+
+<p>Click the button to calculate pay</p>
+
+<button onclick="myFunction()">Calculate</button>
+
+<script>
+function myFunction() {
+	document.getElementById("salary").value = "";
+	var hours = document.getElementById("hours").value;
+	var pos = document.getElementById("position").value;
+	var salary;
+	pos.toLowerCase();
+	
+	if ((pos === "tester") ||(pos === "developer") || (pos === "manager")) {
+		switch(pos) {
+			case "tester":
+				salary = 35 * hours;
+				break;
+			case "developer":
+				salary = 50 * hours;
+				break;
+			case "manager":
+				salary = 65 * hours;
+				break;
+		}
+		document.getElementById("salary").value = "$" + salary;
+	} else {
+		document.getElementById("salary").value = "Enter a valid position";
+	}
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Project 3 Part 1</title>
+</head>
+	<body>
+		<table style="width:600px">
+				<tr>
+					<td></td><td>Pine</td><td>Maple</td><td>Oak</td><td>Fir</td>
+				</tr>
+				<tr>
+					<td>Average Height</td><td>50 feet</td><td>75 feet</td><td>35 feet</td><td>15 feet</td>
+				</tr>
+				<tr>
+					<td>Average Width</td><td>5 feet</td><td>7 feet</td><td>2 feet</td><td>4 feet</td>
+				</tr>
+				<tr>
+					<td>Typical Life Span</td><td>10 years</td><td>25 years</td><td>2 years</td><td>215 years</td>
+				</tr>
+				<tr>
+					<td>Leaf Type</td><td>Diamond</td><td>Diamond</td><td>flat</td><td>Conic</td>
+				</tr>
+		</table>
+	</Body>
+</html>
+	
+
+					
+					
+					

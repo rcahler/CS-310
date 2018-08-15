@@ -1,0 +1,7 @@
+1. SELECT FirstName, LastName FROM Employees WHERE Gender = "F";
+2. SELECT FirstName, LastName FROM Employees WHERE Gender = "F" and Location = "Chicago";
+3. SELECT * FROM Employees WHERE Salary <= 50000;
+4. SELECT * FROM Employees WHERE Location = "Boston" OR Location = "Chicago";
+5. SELECT FirstName, LastName FROM Employees WHERE Location = "Chicago" AND Performance = "Excellent";
+6. UPDATE Employees SET Salary = 60000 WHERE EmployeeID = 22920;
+7. DELETE FROM Employees WHERE EmployeeID = 26634;

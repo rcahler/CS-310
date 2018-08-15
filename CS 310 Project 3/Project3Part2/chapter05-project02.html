@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <title>Chapter 5</title>
+   <link rel="stylesheet" href="chapter05-project02.css" />
+</head>
+<body>
+<form action= "http://www.randyconnolly.com/tests/process.php" method="GET">
+    <fieldset>
+       <legend align="center">Advanced Art Work Search</legend>
+        <div id="searchBox">
+			<textarea rows="1" cols="50">Search Titles</textarea>
+			Subject<input type="radio" name=subject>
+			History<input type="radio" name=history>
+			Person<input type="radio" name=person>
+			Landscape<input type="radio" name=landscape>
+             <select id = "genreList" name = "Select Genre">
+               <option value = "0">Baroque</option>
+               <option value = "1">Renaissance</option>
+               <option value = "2">Realism</option>
+             </select>
+			 <button type="button">Filter</button> 
+        </div>				
+		 
+        <div id="settingsBox">
+             <select id = "Bulk Actions" name = "Bulk Actions">
+               <option value = "0">Archive</option>
+               <option value = "1">Edit</option>
+               <option value = "2">Delete</option>
+			   <option value = "3">Collection</option>
+             </select>
+			 <button type="button">Apply to</button> 
+        </div>
+
+        <div id="paintingBox" name="Paintings">
+			<div>Paintings</div>
+			<table>
+				<thead>
+					<th><div style="width:100px"></div></th><th><div style="width:300px">Title</div></th><th><div style="width:300px">Artist</div></th><th><div style="width:300px">Year</div></th><th><div style="width:300px">Genre</div></th><th><div style="width:300px">Actions</div></th>
+				</thead>
+				<tbody>
+					<tr>
+						<th><input type ="checkbox" name "index[]" value = "0" /></th>
+						<th><img src="images/0530.jpg" alt = "0530.jpg" height="200" width="200"/><Label><i> Death of Marat</i></Label></th>
+						<th>David, Jacques-Louis</th>
+						<th>1793</th>
+						<th>Romanticism</th>
+						<th>
+							<input type="image" src="images/archive.png" alt="archive.png" />
+							<input type="image" src="images/collection.png" alt="collection.png" />
+							<input type="image" src="images/delete.png" alt="delete.png" />
+							<input type="image" src="images/edit.png" alt="edit.png" />
+						</th>
+					</tr>
+
+					<tr>
+						<th><input type ="checkbox" name "index[]" value = "1" /></th>
+						<th><img src="\images\120010.jpg" alt = "120010.jpg" height="200" width="200"/><Label><i> Portrait of Elanor of Toledo</i></Label></th>
+						<th>Brozino, Agnolo</th>
+						<th>1545</th>
+						<th>Mannerism</th>
+						<th>
+							<input type="image" src="images/archive.png" alt="archive.png" />
+							<input type="image" src="images/collection.png" alt="collection.png" />
+							<input type="image" src="images/delete.png" alt="delete.png" />
+							<input type="image" src="images/edit.png" alt="edit.png" />
+						</th>
+					</tr>
+
+					<tr>
+						<th><input type ="checkbox" name "index[]" value = "0" /></th>
+						<th><img src="\images\07020.jpg" alt = "07020.jpg" height="200" width="200"/><Label><i> Liberty Leading the People</i></Label></th>
+						<th>David, Delacroix, Eugene</th>
+						<th>1830</th>
+						<th>Romanticism</th>
+						<th>
+							<input type="image" src="images/archive.png" alt="archive.png" />
+							<input type="image" src="images/collection.png" alt="collection.png" />
+							<input type="image" src="images/delete.png" alt="delete.png" />
+							<input type="image" src="images/edit.png" alt="edit.png" />
+						</th>
+					</tr>
+
+					<tr>
+						<th><input type ="checkbox" name "index[]" value = "0" /></th>
+						<th><img src="\images\13030.jpg" alt = "13030.jpg" height="200" width="200"/><Label><i> Arrangment in Grey and Black</i></Label></th>
+						<th>Whistler, James Abbott</th>
+						<th>1871</th>
+						<th>Realism</th>
+						<th>
+							<input type="image" src="images/archive.png" alt="archive.png" />
+							<input type="image" src="images/collection.png" alt="collection.png" />
+							<input type="image" src="images/delete.png" alt="delete.png" />
+							<input type="image" src="images/edit.png" alt="edit.png" />
+						</th>
+					</tr>
+
+					<tr>
+						<th><input type ="checkbox" name "index[]" value = "0" /></th>
+						<th><img src="\images\06010.jpg" alt = "06010.jpg" height="200" width="200"/><Label><i> Mademoiselle Caroline Riviere</i></Label></th>
+						<th>Ingres, Jean-Auguste</th>
+						<th>1806</th>
+						<th>Neo-Classicism</th>
+						<th>
+							<input type="image" src="images/archive.png" alt="archive.png" />
+							<input type="image" src="images/collection.png" alt="collection.png" />
+							<input type="image" src="images/delete.png" alt="delete.png" />
+							<input type="image" src="images/edit.png" alt="edit.png" />
+						</th>
+					</tr>
+				</tbody>
+			</table>
+        </div> 
+    </fieldset>  
+</form>
+</body>
+</html>

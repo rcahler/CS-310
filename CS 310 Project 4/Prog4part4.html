@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+Discount: <select id="discount">
+			<option value="0.9">10%</option>
+			<option value="0.8">20%</option>
+			<option value="1">None</option>
+		</select>
+Type: <select id="type">
+			<option value="makeover">Makeover</option>
+			<option value="hair">Hair Styling</option>
+			<option value="manicure">Manicure</option>
+			<option value="perm">Permanent Makeup</option>
+		</select>
+		
+
+<p>Click the button to calculate payment</p>
+
+<button onclick="myFunction()">Calculate</button>
+
+<script>
+function myFunction() {
+	var type = document.getElementById("type").value
+	var answer;
+	switch (type) {
+		case "makeover":
+			answer = 125 * document.getElementById("discount").value;
+			break;
+		case "hair":
+			answer = 60 * document.getElementById("discount").value;
+			break;
+		case "manicure":
+			answer = 35 * document.getElementById("discount").value;
+			break;
+		case "perm":
+			answer = 200 * document.getElementById("discount").value;
+			break;
+	}
+	document.getElementById("answer").innerHTML = answer
+}
+</script>
+
+<h1><span id="answer"></span></h1>
+
+</body>
+</html>
